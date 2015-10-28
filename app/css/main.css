@@ -2025,6 +2025,36 @@ html {
   content: ""; }
 
 body {
-  background: #e2ebf3; }
+  background: white;
+  font-size: 62.5%; }
+
+ul {
+  padding: 0px; }
+
+li {
+  list-style: none;
+  text-align: left;
+  padding: 1em 0.5em;
+  border-bottom: 1px solid gray; }
+
+h1 {
+  color: white;
+  background: #8FB43E;
+  font-size: 1.6em;
+  margin: 0px;
+  padding: 1em; }
+
+.container {
+  width: 400px;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 0.5em 1em; }
+  .container .view {
+    height: 4em;
+    background: #8FB43E; }
+    .container .view .back-button {
+      background: transparent;
+      border: none;
+      float: left; }
 
 /*# sourceMappingURL=main.css.map */

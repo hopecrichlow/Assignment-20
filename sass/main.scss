@@ -2,6 +2,42 @@
 @import "neat";
 @import "font-awesome";
 
+$border: 1px solid gray;
+$accentColor: #8FB43E;
+
 body {
-  background: #e2ebf3;
+  background: white;
+  font-size: 62.5%;
+}
+ul {
+  padding: 0px;
+}
+li {
+  list-style: none;
+  text-align: left;
+  padding: 1em 0.5em;
+  border-bottom: $border;
+}
+h1 {
+  color: white;
+  background: $accentColor;
+  font-size: 1.6em;
+  margin: 0px;
+  padding: 1em;
+}
+.container {
+  width: 400px;
+  margin: auto;
+  border: $border;
+  padding: 0.5em 1em;
+  .view {
+    height: 4em;
+    background: $accentColor;
+    .back-button {
+      background: transparent;
+      border: none;
+      float: left;
+    }
+  }
+
 }
