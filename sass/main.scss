@@ -2,7 +2,7 @@
 @import "neat";
 @import "font-awesome";
 
-$border: 1px solid gray;
+$border: 1px solid #DDDDDD;
 $accentColor: #8FB43E;
 
 body {
@@ -10,13 +10,15 @@ body {
   font-size: 62.5%;
 }
 ul {
+  margin: 0px;
   padding: 0px;
 }
 li {
   list-style: none;
+  font-size: 1.2em;
   text-align: left;
-  padding: 1em 0.5em;
-  border-bottom: $border;
+  padding: 1em 0em;
+  border-top: $border;
 }
 h1 {
   color: white;
@@ -25,19 +27,40 @@ h1 {
   margin: 0px;
   padding: 1em;
 }
+i {
+  margin: 0em 0.5em;
+}
+img {
+  border: none;
+  border-radius: 50%;
+  vertical-align: middle;
+}
 .container {
-  width: 400px;
+  width: 450px;
   margin: auto;
   border: $border;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   .view {
-    height: 4em;
+    height: 200px;
     background: $accentColor;
+    overflow: hidden;
     .back-button {
       background: transparent;
       border: none;
       float: left;
     }
+    .main-photo {
+      width: 120px;
+      margin: auto;
+      margin-top: 30px;
+      float: left;
+    }
   }
-
 }
+.person-list-item p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+

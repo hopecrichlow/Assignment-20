@@ -2,7 +2,8 @@ function processData(data) {
   return data.map(function(item){
     return `
       <li class="person-list-item" data-person-id="${item.objectId}">
-        <span>${item.name}</span>
+        <img src=${item.photo} height="50px" width="50px">
+        <p>${item.name}</p>
       </li>
     `;
   }).join('');

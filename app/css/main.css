@@ -2029,13 +2029,15 @@ body {
   font-size: 62.5%; }
 
 ul {
+  margin: 0px;
   padding: 0px; }
 
 li {
   list-style: none;
+  font-size: 1.2em;
   text-align: left;
-  padding: 1em 0.5em;
-  border-bottom: 1px solid gray; }
+  padding: 1em 0em;
+  border-top: 1px solid #DDDDDD; }
 
 h1 {
   color: white;
@@ -2044,17 +2046,36 @@ h1 {
   margin: 0px;
   padding: 1em; }
 
+i {
+  margin: 0em 0.5em; }
+
+img {
+  border: none;
+  border-radius: 50%;
+  vertical-align: middle; }
+
 .container {
-  width: 400px;
+  width: 450px;
   margin: auto;
-  border: 1px solid gray;
-  padding: 0.5em 1em; }
+  border: 1px solid #DDDDDD;
+  padding: 1em 2em; }
   .container .view {
-    height: 4em;
-    background: #8FB43E; }
+    height: 200px;
+    background: #8FB43E;
+    overflow: hidden; }
     .container .view .back-button {
       background: transparent;
       border: none;
       float: left; }
+    .container .view .main-photo {
+      width: 120px;
+      margin: auto;
+      margin-top: 30px;
+      float: left; }
+
+.person-list-item p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

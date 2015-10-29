@@ -273,7 +273,7 @@ Object.defineProperty(exports, '__esModule', {
 });
 function processData(data) {
   return data.map(function (item) {
-    return '\n      <li class="person-list-item" data-person-id="' + item.objectId + '">\n        <span>' + item.name + '</span>\n      </li>\n    ';
+    return '\n      <li class="person-list-item" data-person-id="' + item.objectId + '">\n        <img src=' + item.photo + ' height="50px" width="50px">\n        <p>' + item.name + '</p>\n      </li>\n    ';
   }).join('');
 }
 
@@ -291,7 +291,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports["default"] = function (data) {
-  return "\n    <div class=\"container person\">\n      <div class=\"view\">\n        <button class=\"back-button\" data-to=\"people\">\n          <i class=\"fa fa-arrow-left\"></i>\n        </button>\n      </div>\n      <h1>" + data.name + "</h1>\n      <li><i class=\"fa fa-user\"></i>" + data.name + "</li>\n      <li><i class=\"fa fa-envelope\"></i>" + data.email + "</li>\n      <li><i class=\"fa fa-mobile\"></i>" + data.number + "</li>\n      <li><i class=\"fa fa-globe\"></i>" + data.location + "</li>\n    </div>\n  ";
+  return "\n    <div class=\"container person\">\n      <div class=\"view\">\n        <button class=\"back-button\" data-to=\"people\">\n          <i class=\"fa fa-arrow-left\"></i>\n        </button>\n        <div class=\"main-photo\">\n          <img src=" + data.photo + " height=\"120px\" width=\"120px\">\n        </div>\n      </div>\n      <li><i class=\"fa fa-user\"></i>" + data.name + "</li>\n      <li><i class=\"fa fa-envelope\"></i>" + data.email + "</li>\n      <li><i class=\"fa fa-mobile\"></i>" + data.number + "</li>\n      <li><i class=\"fa fa-globe\"></i>" + data.location + "</li>\n    </div>\n  ";
 };
 
 module.exports = exports["default"];
